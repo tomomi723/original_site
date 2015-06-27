@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>TSUNE</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/tsunesite.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 5000 );
+});
+</script>
+</head>
+<body>
+ 
+  <div class="container">
+       <header>
+           <div class="logo">
+             <img src="picture/tsune ロゴ.png" alt="" width="100%">
+           </div>
+           <ul>
+             <li>
+               <a href="https://www.facebook.com/pages/Tsune/263364903786719?fref=ts"><img src="picture/facebook.png" alt=""></a>
+             </li>
+             <li>
+               <a href="https://twitter.com/Tsune_Online"><img src="picture/twitte.png" alt=""></a>
+             </li>
+           </ul>
+       </header>
+       <div class="mainimage">
+           <p id="slideshow">
+            <img class="active" src="picture/パレット.jpg" alt="" width="900">
+            <img src="picture/プルキニエ 青.jpg" alt="" width="900">
+            <img src="picture/ORGANIZM 黒.jpg" alt="" width="900">
+           </p>
+       </div>
+       <nav class="scroll-fixed">
+           <ul>
+               <li><a href="#content01">ABOUT</a></li>
+               <li><a href="#content02">TEXTILE</a></li>
+               <li><a href="#content03">PRODUCT</a></li>
+               <li><a href="#content04">WORK</a></li>
+               <li><a href="#content05">CONTACT</a></li>
+           </ul>
+       </nav>
+       <div class="section">
+           <section class="content" id="content01">
+              <h2>ABOUT</h2>
+              <div class="rap">
+              <img src="picture/tsune ロゴ.png" alt="">
+              <p>2012年に発足したテキスタイルブランド。日本の伝統技法である「染色」を用いて、「文化のリノベーション」をテーマに、文化的価値のある媒体をアパレル・デザイン・アートなど様々な分野での発信を続ける。</p>
+              </div>
+           </section>
+           <section class="content" id="content02">
+             <h2>TEXTILE</h2>
+             <div class="textile">
+              <div class="pic">
+                 <img src="picture/ORGANIZM 黒.jpg" alt="" width="300" height="200">
+                 <piccaption>
+                     <h3>ORGANIZM</h3>
+                     <p>生命、有機体</p>
+                 </piccaption>
+              </div>
+              <div class="pic">
+                <img src="picture/プルキニエ 青.jpg" alt="" width="300" height="200">
+               <img src="picture/パレット.jpg" alt="" width="300" height="200">
+               <img src="picture/S__34832390.jpg" alt="" width="300" height="200">
+               <img src="picture/ティポスー.jpg" alt="" width="300" height="200">
+             </div>
+           </section>
+           <section class="content" id="content03">
+              <h2>PRODUCT</h2>
+           </section>
+           <section class="content" id="content04">
+              <h2>WORK</h2>
+           </section>
+           <section class="content" id="content05">
+              <h2>CONTACT</h2>
+           </section>
+       </div>
+ </div>
+</body>
+</html>
