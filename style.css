@@ -4,7 +4,6 @@
 }
 body{
     width: 100%;
-    padding: 100px;
 }
 .container{
     width: 100%;
@@ -145,6 +144,7 @@ piccaption{
     -webkit-transition: .3s;
     transition: .3s;
     opacity: 0;
+    color: #EEEEEE
 }
 .pic:hover piccaption{
     opacity: 1;
