@@ -68,7 +68,8 @@ header ul li{
 .scroll-fixed ul{
     text-align: center;
     margin: 0 auto;
-    height: 100px;   
+    height: 100px; 
+    color: #000
 }
 .scroll-fixed li{
     float: left;
@@ -115,23 +116,30 @@ section#content02{
     width: 100%;
     margin: 70px 0;
 /*    background: #EEEEEE; */
+    overflow: hidden;
     
 }
 section#content02 h2{
     width: 100px;
     padding: 5px;
-    margin: auto;
-    
+    margin: auto;  
 }
+section#content02 h4{
+    width: 600px;
+    margin: auto;
+    } 
 .textile{
-    width: 2000px;
-    padding: 5px;
+    width: 1600px;
+    padding: 20px;
     margin: auto;
 }
 .pic{
     position: relative;
     width: 300px;
     overflow: hidden;
+    float: left;
+    margin: auto;
+    padding: 5px;
 }
 piccaption{
     position: absolute;
@@ -148,4 +156,103 @@ piccaption{
 }
 .pic:hover piccaption{
     opacity: 1;
+}
+
+/*　コンテンツ3  */
+section#content03{
+　　width: 100%;
+    margin: 70px 0;
+    background: #EEEEEE;
+}
+section#content03 h2{
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+}
+.rap4{
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.rap4 ul{
+    width: 400px;
+    margin: 50px;
+    float: left;
+}
+
+.button{
+    font-size: 25px;
+    color: #317589;
+    background: #fff;
+    border: 1px solid #317589;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button:hover{
+    background: #317589;
+    color: #fff;
+}
+
+
+/*　コンテンツ4　*/
+section#content04{
+　　width: 100%;
+    margin: 70px 0;
+/*    background: #EEEEEE;*/
+}
+section#content04 h2{
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+}
+.rap2{
+    width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+.rap2 ul{
+    width: 400px;    
+    float: left;
+    margin: 50px 100px;
+}
+/*
+.rap2 ul h4{
+   float: left;
+}
+*/
+.rap3{
+    width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+.rap3 ul{
+    width: 400px;
+    float: left;
+    margin: 50px 100px;
+} 
+/*
+.rap3 ul h4{
+    float: left;
+}
+*/
+
+/*　コンテンツ5　*/
+section#content05{
+　　 width: 100%;
+    height: 200px;
+    margin: 70px 0;
+    background: #EEEEEE;
+    
+}
+section#content05 h2{
+    width: 100px;
+    padding: 5px;
+    margin: auto;
+}
+section#content05 p{
+    width: 400px;
+    padding: 50px;
+    margin: auto;
 }
