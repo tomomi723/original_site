@@ -170,14 +170,20 @@ section#content03 h2{
     margin: auto;
 }
 .rap4{
-    width: 1000px;
+    width: 1200px;
     margin: auto;
     overflow: hidden;
 }
-.rap4 ul{
+.a{
     width: 400px;
     margin: 50px;
     float: left;
+}
+.b{
+    width: 400px;
+    margin: 50px;
+    float: left;
+    padding: 150px 0 0 150px;
 }
 
 .button{
@@ -212,7 +218,12 @@ section#content04 h2{
     margin: auto;
     overflow: hidden;
 }
-.rap2 ul{
+.c{
+    width: 400px;    
+    float: left;
+    margin: 50px 100px;
+}
+.d{
     width: 400px;    
     float: left;
     margin: 50px 100px;
@@ -227,7 +238,12 @@ section#content04 h2{
     margin: auto;
     overflow: hidden;
 }
-.rap3 ul{
+.e{
+    width: 400px;
+    float: left;
+    margin: 50px 100px;
+} 
+.f{
     width: 400px;
     float: left;
     margin: 50px 100px;
